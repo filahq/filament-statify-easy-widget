@@ -8,6 +8,15 @@ Build Filament stat widgets from Eloquent models with a fluent API.
 composer require filahq/statify-easy-widget
 ```
 
+The core package only requires Filament widgets. If you want to register the optional
+`StatifyEasyWidgetPlugin` with a Filament panel, install full Filament too:
+
+```bash
+composer require filament/filament
+```
+
+`Statify Easy Widget` supports both Filament 4 and Filament 5.
+
 ## Usage
 
 Extend `EasyStatsWidget` and define your stats in a `stats()` method using the fluent `Stat` builder:
@@ -104,7 +113,8 @@ If both `chart()` and `chartLastDays()` are set, the static `chart()` array take
 
 ## Filament Plugin (optional)
 
-If you want to register the plugin with your Filament panel:
+If you want to register the plugin with your Filament panel, install `filament/filament`
+and then register:
 
 ```php
 use FilaHQ\StatifyEasyWidget\StatifyEasyWidgetPlugin;

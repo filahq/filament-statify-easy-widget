@@ -11,13 +11,14 @@
     "eloquent"
   ],
   "suggest": {
+    "filament/filament": "Install this if you want to register StatifyEasyWidgetPlugin with a Filament panel.",
     "filahq/statify": "Optional companion package if you want to expose these widgets through the Statify API."
   },
   "require": {
-    "php": "^8.3",
-    "filament/filament": "^4.0",
-    "illuminate/support": "^12.0",
-    "illuminate/database": "^12.0"
+    "php": "^8.2",
+    "filament/widgets": "^4.0|^5.0",
+    "illuminate/support": "^11.28|^12.0",
+    "illuminate/database": "^11.28|^12.0"
   },
   "autoload": {
     "psr-4": {
